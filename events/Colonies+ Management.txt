@@ -1,0 +1,30 @@
+namespace = colonies_plus_management
+
+country_event = {
+	id = colonies_plus_management.1
+	title = "colonies_plus_management.EVTNAME1"
+	desc = "colonies_plus_management.EVTDESC1"
+
+	is_triggered_only = yes
+
+	trigger = {
+		on_colony_finished = yes
+	}
+
+	option = {
+		# Take direct control of colony
+		name = "colonies_plus_management.EVTOPTA1"
+	}
+
+	option = {
+		# Create new colonial nation (possibly a limit to 3 colonial nations per region?)
+		name = "colonies_plus_management.EVTOPTB1"
+	}
+
+	option = {
+		# Add colony to existing colonial nation (triggers a second event)
+		# second event-> choose between all neighboring colonial nations
+		name = "colonies_plus_management.EVTOPTC1"
+	}
+
+}

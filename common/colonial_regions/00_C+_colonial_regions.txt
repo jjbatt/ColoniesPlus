@@ -1,0 +1,524 @@
+#Lower Canada
+colonial_lower_canada = {
+	color = { 0 61 165 }
+
+	# Random New World
+	tax_income = 1
+	native_size = 4
+	native_ferocity = 1
+	native_hostileness = 4
+
+	trade_goods = {
+		fur = 20
+		fish = 10
+		naval_supplies = 3
+		grain = 1
+	}
+
+	culture = {
+		inuit = 10
+		cree = 10
+		nakota = 2
+		cheyenne = 2
+		anishinabe = 2
+		huron = 2
+		iroquois = 2
+		mahican = 2
+		abenaki = 2
+		mikmaq = 2
+	}
+
+	religion = {
+		shamanism = 10
+	}
+
+	provinces = {
+		986 990 992 993 994 995 996 998 999 1000 1002 2012 2576 2577 2578 2579 2580 2581 2582 2583 2584 4893 4894 4895 
+		4953 4954 4955 #Québec
+
+	}
+
+	# Specific
+	names = {
+		trigger = {
+			OR = {
+				tag = GBR
+				tag = ENG
+				culture_group = british
+			}
+		}
+		name = "COLONIAL_CANADA_Lower_Canada"
+	}
+	names = {
+		trigger = {
+			OR = {
+				tag = FRA
+				culture_group = french
+			}
+		}
+		name = "COLONIAL_CANADA_Quebec"
+	}
+	names = {
+		trigger = {
+			OR = {
+				tag = CAS
+				tag = ARA
+				tag = SPA
+				primary_culture = castillian
+				primary_culture = aragonese
+			}
+		}
+		name = "COLONIAL_CANADA_Bajo_Canada"
+	}
+	names = {
+		trigger = {
+			OR = {
+				tag = POR
+				primary_culture = portuguese
+			}
+		}
+		name = "COLONIAL_CANADA_Baixo_Canada"
+	}
+	names = {
+		trigger = {
+			OR = {
+				tag = NED
+				tag = HOL
+				primary_culture = dutch
+			}
+		}
+		name = "COLONIAL_CANADA_Nova_Hollandia"
+	}
+	# Generic
+	names = {
+		name = "COLONIAL_CANADA_Root_Culture_GetGroupName_Laurentia"
+	}
+}
+
+#Illinois
+colonial_illinois = {
+	color = { 237 210 159 }
+
+	# Random New World
+	tax_income = 1
+	native_size = 18
+	native_ferocity = 2
+	native_hostileness = 6
+
+	trade_goods = {
+		fur = 10
+		fish = 1
+		grain = 11
+		cotton = 7
+		iron = 1
+	}
+
+	culture = {
+		nakota = 2
+		dakota = 8
+		chiwere = 3
+		pawnee = 10
+		osage = 3
+		caddo = 6
+		cheyenne = 1
+		shoshone = 1
+	}
+
+	religion = {
+		shamanism = 20
+		animism = 20
+	}
+
+	provinces = {
+		946 947 948 2525 4907 #Ohio
+		942 943 2523 2524 4922 #Indiana
+		911 944 945 2521 2522 4898 #Michigan
+		915 916 917 2519 2520 4903 4904 #Illinois
+		912 913 914 2518 4899 #Wisconsin
+		910 2517 #Minnesota North of the Mississippi
+	}
+	# Specific
+	names = {
+		trigger = {
+			OR = {
+				tag = FRA
+				culture_group = french
+			}
+		}
+		name = "COLONIAL_ILLINOIS_Pays_des_Illinois"
+	}
+	names = {
+		trigger = {
+			OR = {
+				tag = ENG
+				tag = GBR
+				culture_group = british
+			}
+		}
+		name = "COLONIAL_ILLINOIS_Illinois_Country"
+	}
+	names = {
+		trigger = {
+			OR = {
+				tag = SPA
+				tag = CAS
+				tag = ARA
+				culture = castillian
+			}
+		}
+		name = "COLONIAL_ILLINOIS_Pais_de_los_Ilinueses"
+	}
+
+	#Generic
+	names = {
+		name = "COLONIAL_ILLINOIS_Root_Culture_GetName_Illinois"
+	}
+}
+
+# Southeastern America
+colonial_southeastern_america = {
+	color = { 181 54 54 }
+
+	# Random New World
+	tax_income = 2
+	native_size = 8
+	native_ferocity = 2
+	native_hostileness = 5
+
+	trade_goods = {
+		fur = 15
+		fish = 3
+		naval_supplies = 4
+		grain = 4
+		tobacco = 8
+		cotton = 10
+		sugar = 1
+	}
+
+	culture = {
+		creek = 5
+		choctaw = 2
+		chickasaw = 2
+		cherokee = 5
+		shawnee = 5
+		dakota = 2
+		iroquois = 3
+		powhatan = 2
+		delaware = 4
+		susquehannock = 5
+		mahican = 2
+		pequot = 2
+		abenaki = 4
+	}
+
+	religion = {
+		shamanism = 10
+	}
+
+	provinces = {
+		953 2553 2554 #Maryland
+
+		949 950 952 2011 2548 2549 2550 4877 #Virginia
+		951 2551 2552 4889 #West Virginia
+		940 941 2526 4887 4888 4921  #Kentucky
+
+		936 937 938 2544 2545 2546 2547 4878 4879 #North Carolina
+		918 934 935 939 2527 4913 #Tennessee
+
+		932 933 2541 2542 2543 4882 #South Carolina
+
+		929 930 931 2537 2538 2539 2540 4880 4881 #Georgia
+		2531 2532 4883 #North Alabama
+		919 2528 #North Mississippi
+
+		#Colonies+
+		4947 #Maryland
+	}
+
+	# Specific
+	names = {
+		trigger = {
+			OR = {
+				tag = GBR
+				tag = ENG
+			}
+		}
+		name = "COLONIAL_SOUTHEASTERN_AMERICA_Southern_Colonies"
+	}
+	names = {
+		trigger = {
+			OR = {
+				tag = FRA
+				culture_group = french
+			}
+		}
+		name = "COLONIAL_SOUTHEASTERN_AMERICA_Charleterre"
+	}
+	names = {
+		trigger = {
+			OR = {
+				tag = SPA
+				tag = CAS
+				tag = ARA
+			}
+		}
+		name = "COLONIAL_SOUTHEASTERN_AMERICA_Ayllona"
+	}
+	# Generic
+	names = {
+		name = "COLONIAL_REGION_New_Root_GetName"
+	}
+	names = {
+		name = "COLONIAL_EASTERN_AMERICA_Florida"
+	}
+	names = {
+		name = "COLONIAL_EASTERN_AMERICA_Virginia"
+	}
+}
+
+
+# Florida
+colonial_florida = {
+	color = { 255 151 31 }
+
+	# Random New World
+	tax_income = 2
+	native_size = 8
+	native_ferocity = 2
+	native_hostileness = 5
+
+	trade_goods = {
+		fur = 15
+		fish = 3
+		naval_supplies = 4
+		grain = 4
+		tobacco = 8
+		cotton = 10
+		sugar = 1
+	}
+
+	culture = {
+		creek = 5
+		choctaw = 2
+		chickasaw = 2
+		cherokee = 5
+		shawnee = 5
+		dakota = 2
+		iroquois = 3
+		powhatan = 2
+		delaware = 4
+		susquehannock = 5
+		mahican = 2
+		pequot = 2
+		abenaki = 4
+	}
+
+	religion = {
+		shamanism = 10
+	}
+
+	provinces = {
+		926 927 928 2534 2535 2536 4625 4626 #East Florida
+		920 2529 4884 #South Mississippi
+		924 925 #South Alabama
+		921 922 923 2530 2533 #West Florida
+		
+	}
+
+	# Specific
+	names = {
+		trigger = {
+			OR = {
+				tag = FRA
+				culture_group = french
+			}
+		}
+		name = "COLONIAL_EASTERN_AMERICA_Floride"
+	}
+	names = {
+		trigger = {
+			OR = {
+				tag = FRA
+				culture_group = french
+			}
+			owns = 90 # Vlaanderen
+		}
+		name = "COLONIAL_EASTERN_AMERICA_Nouvelle_Flandre"
+	}
+	names = {
+		trigger = {
+			OR = {
+				tag = SPA
+				tag = CAS
+				tag = ARA
+			}
+		}
+		name = "COLONIAL_EASTERN_AMERICA_Florida"
+	}
+	names = {
+		trigger = {
+			OR = {
+				tag = KOR
+				primary_culture = korean
+				primary_culture = korean_new
+			}
+		}
+		name = "COLONIAL_EASTERN_AMERICA_Miju"
+	}
+	# Generic
+	names = {
+		name = "COLONIAL_EASTERN_AMERICA_Florida"
+	}
+	names = {
+		name = "COLONIAL_REGION_New_Root_GetName"
+	}
+}
+
+#Atlantic Canada
+colonial_atlantic_canada = {
+	color = { 213 43 30 }
+
+	# Random New World
+	tax_income = 1
+	native_size = 4
+	native_ferocity = 1
+	native_hostileness = 4
+
+	trade_goods = {
+		fur = 20
+		fish = 10
+		naval_supplies = 3
+		grain = 1
+	}
+
+	culture = {
+		inuit = 10
+		cree = 10
+		nakota = 2
+		cheyenne = 2
+		anishinabe = 2
+		huron = 2
+		iroquois = 2
+		mahican = 2
+		abenaki = 2
+		mikmaq = 2
+	}
+
+	religion = {
+		shamanism = 10
+	}
+
+	provinces = {
+		985 2570 2571 2572 4896 4952 #New Brunswick
+		983 #P.E.I.
+		982 984 2568 2569 4891 4951 #Nova Scotia
+		980 981 2573 4949 4950 #Newfoundland
+		997 2574 2575 #Labrador
+	}
+
+	# Specific
+	names = {
+		trigger = {
+			OR = {
+				tag = FRA
+				culture_group = french
+			}
+		}
+		name = "COLONIAL_ATLANTIC_CANADA_Acadie"
+	}
+	names = {
+		trigger = {
+			OR = {
+				tag = GBR
+				tag = ENG
+			}
+		}
+		name = "COLONIAL_ATLANTIC_CANADA_Newfoundland"
+	}
+	names = {
+		trigger = {
+			culture_group = scandinavian
+		}
+		name = "COLONIAL_CANADA_Vinland"
+	}
+	# Generic
+	names = {
+		name = "COLONIAL_ATLANTIC_CANADA_Root_Culture_GetGroupName_Newfoundland"
+	}
+
+}
+
+# Rio Grande
+colonial_rio_grande = {
+	color = { 75 23 158 }
+
+	# Random New World
+	tax_income = 3
+	native_size = 8
+	native_ferocity = 2
+	native_hostileness = 5
+
+	trade_goods = {
+		fur = 2
+		grain = 8
+		salt = 5
+		wool = 7
+		fish = 5
+		sugar = 8
+		gold = 5
+		cocoa = 6
+		naval_supplies = 1
+	}
+
+	culture = {
+		pueblo = 2
+		navajo = 10
+		piman = 5
+		aztek = 8
+		zapotek = 6
+		mayan = 7
+	}
+
+	religion = {
+		animism = 10
+	}
+
+	provinces = {
+		#Texas
+		883 884 885 886 887 888 2497 2498 2499 2500 2665 2666 2669 2800 4627 4628 4629 4909 4910 4911
+
+		#New Mexico
+		880 881 882 2495 2496 4630 4631 4632
+
+		#Chihuahua
+		863 864 2618 4644
+
+		#Coahuila
+		861 2667 2699 4606
+
+		#Tamaulipas
+		858 2614 2668
+		
+	}
+
+	# Specific
+	names = {
+		trigger = {
+			tag = SPA
+		}
+		name = "COLONIAL_MEXICO_New_Spain"
+	}
+	names = {
+		trigger = {
+			tag = CAS
+		}
+		name = "COLONIAL_MEXICO_New_Castile"
+	}
+	# Generic
+	names = {
+		name = "COLONIAL_MEXICO_Root_Culture_GetName_Mexico"
+	}
+	names = {
+		name = "COLONIAL_REGION_New_Root_GetName"
+	}
+}
